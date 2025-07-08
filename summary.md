@@ -28,10 +28,10 @@
 
 ・アセット<br>
 
-    Image.asset(<br>
-      'assets/sample.png',<br>
-      width: 100,<br>
-      height: 100,<br>
+    Image.asset(
+      'assets/sample.png',
+      width: 100,
+      height: 100,
     )
 </details>
 
@@ -40,11 +40,45 @@
 <details>
 <summary>使い方</summary>
   
-    Icon(<br>
-      Icons.favorite,<br>
-      color: Colors.red,<br>
-      size: 48,<br>
+    Icon(
+      Icons.favorite,
+      color: Colors.red,
+      size: 48,
     )  
+</details>
+
+# Divider
+・線を引いてUIの区切りを作るウィジェット
+
+<details>
+<summary>使い方</summary> 
+  
+    Divider(
+    color: Colors.grey,
+    thickness: 1, 
+    indent: 16, 
+    endIndent: 16, 
+    ) 
+</details>
+
+# RichText
+・複数のスタイルを組み合わせたテキストを表示する
+
+<details>
+  <summary>使い方</summary>
+  
+    RichText( 
+    text: TextSpan( 
+    style: TextStyle(fontSize: 18, color: Colors.black), 
+    children: [ 
+    TextSpan(text: 'こんにちは、'), 
+    TextSpan( <br> text: 'Flutter', 
+    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue), 
+    ), 
+    TextSpan(text: '！'), 
+    ], 
+    ), 
+    ) 
 </details>
 
   </details>
@@ -296,38 +330,6 @@ selected = value!; <br>
   child: Padding( <br>
   padding: EdgeInsets.all(16), <br>
   child: Text('カードの中身'), <br>
-  ), <br>
-  ) <br>
-</details>
-
-# Divider
-・線を引いてUIの区切りを作るウィジェット
-
-<details>
-  <summary>使い方</summary> 
-  Divider( <br> 
-  color: Colors.grey, <br>
-  thickness: 1, <br>
-  indent: 16, <br>
-  endIndent: 16, <br> 
-  ) <br>
-</details>
-
-# RichText
-・複数のスタイルを組み合わせたテキストを表示する
-
-<details>
-  <summary>使い方</summary>
-  RichText( <br>
-  text: TextSpan( <br>
-  style: TextStyle(fontSize: 18, color: Colors.black), <br>
-  children: [ <br>
-  TextSpan(text: 'こんにちは、'), <br> 
-  TextSpan( <br> text: 'Flutter', <br>
-  style: TextStyle(fontWeight: FontWeight.bold, color: Colors.blue), <br>
-  ), <br>
-  TextSpan(text: '！'), <br>
-  ], <br>
   ), <br>
   ) <br>
 </details>
